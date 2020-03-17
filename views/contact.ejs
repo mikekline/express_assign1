@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+    <!-- form -->
+    <section id="contact" class="formSection">
+      <form class="emailForm" action="https://formkeep.com/f/416411f7652a" accept-charset="UTF-8"  enctype="multipart/form-data" method="POST">
+        <fieldset>
+          <legend>Contact</legend>
+
+          <label for="regUserName">Name:</label>
+          <input type="text" name="name" id="regUserName" required minlength="8" maxlength="25" size="25" placeholder="8-20 characters">
+
+          <label for="regEmail">Email:</label>
+          <input type="email" name="email" id="regEmail" required size="25">
+
+          <label for="comments">Comments:</label>
+          <textarea name="message" id="comments" cols="25" rows="8">Enter your comments...</textarea>
+
+          <input class="submitButton" type="submit" value="submit">
+        </fieldset>
+      </form>
+    </section>
+    <%- include('partials/footer') %>

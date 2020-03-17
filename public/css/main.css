@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+/**********************resets********************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  margin-bottom: .5em;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+
+
+/*********************************navbar with links for internal page and header with hero section *******************************/
+
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+  background-color: #50514f;
+  color: whitesmoke;
+  box-shadow: 0px 2px 8px black;
+  z-index: 1;
+}
+
+.hatLogo {
+  position: absolute;
+  margin-left: 1rem;
+  width: 8vw;
+}
+
+h1 {
+  padding: .5vh 12vw;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2vw;
+}
+
+nav li {
+  padding-top: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  display: flex;
+}
+
+
+nav a {
+  padding: 1.5rem;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0a69a9;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90vh;
+  background-image: url('../assets/canadian-rockies-moraine-lake.jpg');
+  background-size: cover;
+}
+
+.headerTransition {
+  display: flex;
+  margin-top: 40vh;
+  border: 1px solid black;
+}
+
+.headerimage {
+  height: 36vh;
+  width: 18vw;
+  margin: -18vh -3vw;
+  border: 1px solid black;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+/**************************end of nav and header***********************/
+
+
+
+
+
+
+
+
+
+/*********************************main section of webpage*******************************/
+
+main {
+ margin-top: 30vh;
+ width:100%;
+}
+
+h2 {
+  position: relative;
+  margin-bottom: 0rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#gallery {
+  position: relative;
+  top:200px;
+}
+
+h3 {
+  position: absolute;
+  margin: .5rem auto;
+  font-size: 1.5rem;
+}
+
+hr {
+  height: 1px;
+  width: 80%;
+  background-color: black;
+}
+
+p {
+  padding: 2ch;
+}
+
+
+
+/********** the journey and gallery cards layout********/
+.cardContainer {
+  position: relative;
+  top:200px;
+  margin-bottom: 200px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.mainCards {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  margin:  3rem;
+  background-color: lightgray;
+  border-radius: 30px;
+  box-shadow: 2px 4px 4px #50514f;
+}
+
+
+.mainImg{
+ margin: 3rem auto 0 auto;
+ border-radius: 30px;
+}
+
+.galleryImg{
+  position: relative;
+  height: 400px;
+  width: 300px;
+  border-radius: 30px;
+  
+}
+/* use of odd  height and width as that is what seamed to work */
+.galleryText {
+  position: absolute;
+  height: 40px;
+  width:269px; 
+  margin-top: 328px;
+  background-color: lightgray;
+  border-radius: 0 0 30px 30px;
+  font-weight: bold;
+  text-align: center;
+  opacity: .7;
+}
+/********** end of the journey and gallery cards********/
+
+
+.aboutMe {
+  float: left;
+  width: 14vw;
+  margin: 1.5rem;
+  border: 1px solid #50514f;
+  border-radius: 60%;
+  box-shadow: 4px 6px 6px black;
+  shape-outside: ellipse(50% 50% at 8vw);
+}
+
+article {
+  padding-top: 10rem;
+  width: 50vw;
+  margin: 0vh auto 20vh auto;
+}
+
+.formSection {
+  align-self: center;
+  position: relative;
+  top:200px;
+  height: 42vh;
+  width: 30vw;
+  margin:  auto;
+  padding: 3rem 2rem 0 2rem;
+  background-color: lightgrey;
+  border: 1px solid #50514f;
+  border-radius: 40px;
+  box-shadow: 2px 2px 4px black;
+}
+
+
+.emailForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea {
+  display: block;
+  width: 20vw;
+}
+
+.submitButton {
+  width:10vw;
+  margin: 1rem auto 2rem auto;
+  padding:.5vw;
+  border-radius: 30px;
+  border:1px black;
+  background-color: #50514f;
+}
+
+.submitButton:hover {
+background-color: grey;
+
+}
+
+
+/********************************* end of main*******************************/
+
+
+
+
+
+
+
+
+/*********************************footer*******************************/
+
+
+footer {
+  align-self: flex-end;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+  height: 4rem;
+  width: 100%;
+  margin-bottom: 0;
+  padding: .5rem 0;
+  text-align: center;
+  background-color: #50514f;
+  color: whitesmoke;
+}
+
+footer ul li {
+  padding: 0 1rem;
+}
+
+footer a {
+  color: whitesmoke;
+}
+
+/*********************************end of footer*******************************/
+
+
+
+
+
+
+
+/*********************************responisive for mobile*******************************/
+
+
+@media only screen and (max-width: 600px) {
+
+
+  nav ul{
+    display: none;
+  }
+
+  .hamburgerMenu {
+    display: inline-block;
+  }
+
+  input, textarea {
+    width: 40vw;
+  }
+
+  .formSection {
+    height: 50vh;
+    width: 45vw;  
+  }
+
+  .submitButton {
+    width:30vw;
+    padding: 2.5vw;
+  }
+}
